@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--    fonts.google.com-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!--    // наши стили преоритетней поэтому последние-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__contact">
+                <a class="header__phone" href="tel:79246791482">+7 924 679 14 82</a>
+                <a class="header__email" href="#">ybalalaev@gmail.com</a>
+                <!--   data-fancybox data... и т.д.  берем из примера в кнопке фансибокса на ихнем сайте->-->
+                <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                   class="header__btn" href="#">Бесплатная консультация</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__content">
+        <div class="container">
+            <div class="header_content-inner">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!--всплывашка на кнопке-->
+<div id="animatedModal" class="animated-modal">
+    <h2>подключаем сначала гугл библиотеку jquery https://developers.google.com/speed/libraries#libraries--!</h2>
+    <p>This is animated content! Cool, right? This is animated content! Cool, right? This is animated content! Cool, right?</p>
+</div>
+
+<!--подключаем сначала гугл библиотеку jquery https://developers.google.com/speed/libraries#libraries-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--затем подключаем наш фансибокс для кнопки   -->
+<script src="js/jquery.fancybox.min.js"></script>
+
+<!--подключим наш собственный js-->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
+
+<!--https://youtu.be/Q2zxQNQGcU8?t=2018-->

@@ -1,0 +1,165 @@
+/* все padding & border  эл-тов будут вычитаться изнутри */
+*{
+    box-sizing: border-box;
+}
+
+a {
+    /*убрать подчеркивание ссылок */
+    text-decoration: none;
+     /*ссылки строчно-блочные*/
+    display: inline-block;
+}
+
+ul,
+li{
+    /*отключить маркеры*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /*чтобы не было нижнего скролла при сужении*/
+    max-width:1185px;
+    margin: 0 auto;
+    /*чтобы контейнер не прилипал к стенкам экрана планшета /телефона*/
+    padding: 0 15px;
+}
+
+body{
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5e5e5e;
+}
+ header{
+     font-family: 'Roboto', sans-serif;
+ }
+ .header__top{
+     background-color: #303030;
+
+ }
+
+ .header__btn{
+     float: right;
+     line-height: 36px;
+     color: #1b1b1b;
+
+     background-color: #ffc222;
+     padding: 5px 20px 4px 50px;
+     font-size: 16px;
+     position: relative;
+ }
+.header__btn:before{
+    content: "\f0b1";
+    font-family: 'icomoon';
+    color: #1b1b1b;
+    position: absolute;
+    left:20px;
+
+}
+.header__contact:after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+.header__phone,
+.header__email{
+    color: #d3d2d2;
+    letter-spacing: 0.25px;
+    line-height: 45px;
+    /*для иконки трубки*/
+    position: relative;
+}
+.header__phone{
+    padding: 0 30px 0 20px;
+}
+.header__phone:before{
+/*    скачиваем с */
+/*    копируем юникод телефона из fonts */
+    content: "\f095";
+/*    указать обязательно шрифт */
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0px;
+    color: #ffc222;
+}
+.header__email{
+    padding-left: 24px  ;
+}
+.header__email:before{
+    content: "\f003";
+    font-family: 'icomoon';
+    position: absolute;
+    left:  0px;
+    color: #ffc222;
+}
+.header__content{
+    padding: 34px 0px 23px;
+}
+.menu li {
+    display: inline-block;
+}
+.header_content-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    color: #323232;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 0 16px;
+    transition: all 0.3s;
+}
+.menu a:hover{
+    border-color: #ffc222;
+}
+
+/*свойства применяются к списку но кроме первого в списке*/
+.menu li+li {
+    padding-left: 10px;
+}
+
+/*
+    всплывашка на кнопке
+   =========================
+
+*/
+
+/* Start state */
+.animated-modal {
+    max-width: 550px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    transform: translateY(-50px);
+    transition: all .7s;
+}
+
+.animated-modal h2,
+.animated-modal p {
+    transform: translateY(-50px);
+    opacity: 0;
+
+    transition-property: transform, opacity;
+    transition-duration: .4s;
+}
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal h2,
+.fancybox-slide--current .animated-modal p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Reveal content with different delays */
+.fancybox-slide--current .animated-modal h2 {
+    transition-delay: .1s;
+}
+
+.fancybox-slide--current .animated-modal p {
+    transition-delay: .3s;
+}
