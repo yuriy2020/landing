@@ -122,12 +122,9 @@ body{
     padding-left: 10px;
 }
 
-/*
-    всплывашка на кнопке
+/* всплывашка на кнопке
    =========================
-
 */
-
 /* Start state */
 .animated-modal {
     max-width: 550px;
@@ -163,6 +160,7 @@ body{
 .fancybox-slide--current .animated-modal p {
     transition-delay: .9s;
 }
+/*==========конец всплывашка =================*/
 
 .slider{
     background-image: url("../img/slider-fon.jpg");
@@ -187,15 +185,16 @@ body{
     letter-spacing: 1.5px;
     margin-bottom: 22px;
     font-family: 'Roboto', sans-serif;
-
 }
+
 .slider__text{
     line-height: 24px;
     font-size: 18px;
     color: #d3d2d2;
     margin-bottom: 50px;
 }
-/*сделаем класс для всех таких кнопочек*/
+
+/*сделаем класс для всех таких кнопочек  "Оставить Заявку"*/
 .default-btn{
     display: inline-block;
     line-height: 24px;
@@ -208,6 +207,7 @@ body{
     border-right-width: 20px;     /*толщина правой стороны кнопки*/
     position: relative;
 }
+
 .default-btn:after{
     content: "\f105";
     font-family: 'icomoon';
@@ -215,5 +215,39 @@ body{
     top:50%;
     transform: translateY(-50%);
     right: -10px;
+}
+.slider__inner{
+    position: relative;
+}
 
+/*этот класс из main.js в слике   (мы создали для кнопок <<  и   >>  )*/
+.slick__btn{
+    position: absolute;
+    top: 70%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: #ffc222;
+    color:#fff;
+    /*курсор над кнопочкой превращается в указатель*/
+    cursor: e-resize;
+    /*    убираем синюю обводку на бордере*/
+    outline: none;
+}
+
+.slick-prev {
+    left: 0;
+}
+.slick-prev:before{
+    content: "\f104";
+    font-family: 'icomoon'
+}
+
+.slick-next{
+    right: 0;
+}
+.slick-next:before{
+    content: "\f105";
+    font-family: 'icomoon'
 }
