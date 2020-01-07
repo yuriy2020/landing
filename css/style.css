@@ -206,6 +206,7 @@ body{
     border: 1px solid #ffc222;
     border-right-width: 20px;     /*толщина правой стороны кнопки*/
     position: relative;
+    z-index: 2;
 }
 
 .default-btn:after{
@@ -214,12 +215,13 @@ body{
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    right: -10px;
+    right: -12px;
 }
+
 .slider__inner{
     position: relative;
 }
-
+ 
 /*этот класс из main.js в слике   (мы создали для кнопок <<  и   >>  )*/
 .slick__btn{
     position: absolute;
@@ -228,10 +230,10 @@ body{
     width: 40px;
     height: 40px;
     border: 1px solid #fff;
-    background-color: #ffc222;
+    background-color: transparent;
     color:#fff;
     /*курсор над кнопочкой превращается в указатель*/
-    cursor: e-resize;
+    cursor: pointer;
     /*    убираем синюю обводку на бордере*/
     outline: none;
 }
