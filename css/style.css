@@ -216,13 +216,14 @@ body{
     top:50%;
     transform: translateY(-50%);
     right: -12px;
+    
 }
 
-.slider__inner{
+/* .slider__inner{
     position: relative;
 }
- 
-/*этот класс из main.js в слике   (мы создали для кнопок <<  и   >>  )*/
+  */
+/*этот класс из main.js в слике   (мы создали для 2х кнопок <<  и   >>  )*/
 .slick__btn{
     position: absolute;
     top: 70%;
@@ -230,12 +231,19 @@ body{
     width: 40px;
     height: 40px;
     border: 1px solid #fff;
-    background-color: transparent;
+    background-color: #ffc222;
     color:#fff;
     /*курсор над кнопочкой превращается в указатель*/
     cursor: pointer;
     /*    убираем синюю обводку на бордере*/
     outline: none;
+    font-family: 'icomoon'
+}
+
+/* класс взят из консоли при нажатии на кнопки (он менялся) */
+.slick-disabled{
+    background-color: transparent;
+    cursor: default;
 }
 
 .slick-prev {
@@ -243,13 +251,11 @@ body{
 }
 .slick-prev:before{
     content: "\f104";
-    font-family: 'icomoon'
 }
 
 .slick-next{
     right: 0;
 }
 .slick-next:before{
-    content: "\f105";
-    font-family: 'icomoon'
+    content: "\f105";   
 }
