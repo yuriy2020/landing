@@ -265,3 +265,77 @@ body{
 .services{
     padding: 50px 0px 30px 0px;
 }
+
+.services__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.services__title{
+    max-width: 520px;
+    padding-left: 140px;
+    position: relative;
+}
+/* yellow line */
+.services__title:before{
+    /* если включаем before  то обязательно content */
+    content:"";       
+    position: absolute;
+    left:0;
+    top: 10%;
+    width: 100px;
+    height: 2px;
+    background-color: #ffc222;
+}
+.services__title__head{
+    font-size: 24px;
+    font-weight: 500;
+    color: #212020;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+.services__title-text{
+    
+}
+.services__btn{
+    font-weight: 500;
+    line-height: 24px;
+    color: #373636;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #e6e6e6;
+    padding: 10px 35px 10px 35px;
+    margin: 25px 0px;
+}
+.services__btn:hover{
+    border-color: #ffc222;
+}
+
+.services__items{
+    display: flex;
+    justify-content: space-between;
+}
+.services__one{
+    max-width: 360px ;
+    text-align: center;
+    padding: 30px 0 80px 0;
+    position: relative;
+    min-height: 375px;
+}
+.service__item-title{
+    font-family: 'Roboto', sans-serif;
+    tab-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #212020;
+    padding: 24px 0;
+}
+.service__item-text{
+    letter-spacing: 0.1px;
+    padding: 0px 35px 30px;
+
+}
+.service__btns{
+    position: absolute;
+    bottom: 40px;
+} 
