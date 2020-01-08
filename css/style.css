@@ -207,6 +207,7 @@ body{
     border-right-width: 20px;     /*толщина правой стороны кнопки*/
     position: relative;
     z-index: 2;
+    outline: none;
 }
 
 .default-btn:after{
@@ -258,4 +259,9 @@ body{
 }
 .slick-next:before{
     content: "\f105";   
+}
+
+/* Секция наши услуги */
+.services{
+    padding: 50px 0px 30px 0px;
 }
