@@ -296,7 +296,7 @@ body{
     margin-bottom: 10px;
 }
 .services__title-text{
-    
+    letter-spacing: 0.1px;
 }
 .services__btn{
     font-weight: 500;
@@ -321,6 +321,8 @@ body{
     padding: 30px 0 80px 0;
     position: relative;
     min-height: 375px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 7px 24.3px 2.7px rgba(91,89,89,0.14);
 }
 .service__item-title{
     font-family: 'Roboto', sans-serif;
@@ -338,4 +340,22 @@ body{
 .service__btns{
     position: absolute;
     bottom: 40px;
+    left: 0;
+    right: 0;
 } 
+
+.service__btns
+.default-btn{
+    color: #373636;
+
+}
+.service__btns
+.default-btn:after{
+    color:#fff;
+}
+.service__item-link{
+    color: #050505;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid  #050505;
+    margin-right: 60px  ;
+}
