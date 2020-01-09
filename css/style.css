@@ -366,7 +366,7 @@ body{
 
 /* ABOUT */
 .about{
-    background-image: url(/img/about-fon.jpg);
+    background-image: url(../img/about-fon.jpg);
     background-size: cover;
     background-position: center;
     min-height: 300px;
@@ -392,3 +392,48 @@ body{
 }
 
 /* FORM */
+.form{
+    padding-top: 30px;
+}
+.form__content{
+    padding-bottom: 40px;
+    background-image: url(../img/form-fon.png);
+    min-height: 460px;
+    background-repeat: no-repeat;
+    /* картинка придавлена к стороронам */
+    background-position: bottom right;
+}
+.form__box__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.form__box{
+    max-width: 850px;
+    padding-top: 40px;
+}
+.form__box__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 260px;
+    width: 100%;
+}
+.form__box__right{
+    max-width: 555px;
+    width: 100%;
+}
+.form__box__inner label,
+.form__box__inner input,
+.form__box__inner textarea,
+.form__box__inner select {
+    display: block;
+    width: 100%;
+}
+.form__box__inner label{
+    line-height: 36px;
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+}
+.form__box__inner input{
+    margin-bottom: 8px;
+}
