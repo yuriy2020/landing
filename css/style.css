@@ -434,6 +434,26 @@ body{
     color: #282828;
     font-family: 'Roboto', sans-serif;
 }
-.form__box__inner input{
+.form__box__inner input,
+.form__box__inner select {
     margin-bottom: 8px;
+    border: 1px solid #e6e6e6;
+    padding: 0px 5px;
+    height: 40px;
+    outline: none;
+
+}
+.form__box__inner textarea{
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    height: 206px;
+    outline: none;
+    /* запретить изменение размера окна */
+    resize: none;   
+    margin-bottom: 40px;
+}
+.form__box__inner button{
+    background-color: transparent;
+    color :#000;
+    float:right;
 }
