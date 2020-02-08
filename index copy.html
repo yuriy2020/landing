@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--    fonts.google.com-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/slick.css">
+
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <!-- нужен для копирования стилей в свой slyle.css -->
+    <!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css"> -->
+
+    <!--    // наши стили преоритетней поэтому последние-->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__contact">
+                    <a class="header__phone" href="tel:79246791482">+7 924 679 14 82</a>
+                    <a class="header__email" href="#">ybalalaev@gmail.com</a>
+                    <!--   data-fancybox data... и т.д.  берем из примера в кнопке фансибокса на ихнем сайте->-->
+                    <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                        class="header__btn" href="#">Бесплатная консультация</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header_content-inner">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--всплывашка на кнопке-->
+    <div id="animatedModal" class="animated-modal">
+        <h2>Этот сайт был сверстан в учебных целях</h2>
+        <p>This is animated content! Cool, right? This is animated content!
+            Cool, right? This is animated content! Cool,right?</p>
+    </div>
+
+    <!-- слайдер -->
+    <section class="slider">
+        <div class="container">
+            <div class="slider__inner">
+                <!--  position: relative;-->
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider__text">
+                            Полное прекращение существования Юридического лица с сохранением легальности предыдущей
+                            деятельности
+                        </div>
+                        <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                            class="default-btn">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider__text">
+                            Полное прекращение существования Юридического лица с сохранением легальности предыдущей
+                            деятельности
+                        </div>
+                        <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                            class="default-btn">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider__text">
+                            Полное прекращение существования Юридического лица с сохранением легальности предыдущей
+                            деятельности
+                        </div>
+                        <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                            class="default-btn">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services__top">
+                <div class="services__title">
+                    <div class="services__title__head">
+                        Наши Услуги
+                    </div>
+                    <div class="services__title__text">
+                        Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов
+                        во всех судебных инстанциях.
+                    </div>
+                </div>
+                <a href="#" class="services__btn">
+                    Показать все услуги
+                </a>
+            </div>
+
+            <div class="services__items">
+                <div class="services__one">
+                    <img src="img/about-1.png" alt="img">
+                    <div class=" service__item-title">
+                        Банкротство и ликвидация
+                    </div>
+                    <div class="service__item-text">
+                        Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                        деятельности
+                    </div>
+                    <div class="service__btns">
+                        <a href="#" class="service__item-link">Подробнее</a>
+                        <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                            class="default-btn">
+                            Заказать
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__one">
+                    <img src="img/about-2.png" alt="img">
+                    <div class="service__item-title">
+                        Адвокатское сопровождение
+                    </div>
+                    <div class="service__item-text">
+                        Мы гарантируем полное профессиональное обслуживание клиентов в заявленных сферах деятельности и
+                        соблюдение
+                        конфиденциальности.
+                    </div>
+                    <div class="service__btns">
+                        <a href="#" class="service__item-link">Подробнее</a>
+                        <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                            class="default-btn">
+                            Заказать
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__one">
+                    <img src="img/about-3.png" alt="img">
+                    <div class="service__item-title">
+                        Налоговый аудит
+                    </div>
+                    <div class="service__item-text">
+                        Налоговый аудит проводят перед проведением налоговых проверок; при оценке возможных налоговых
+                        рисков;
+                        при оптимизации налогообложения.
+                    </div>
+                    <div class="service__btns">
+                        <a href="#" class="service__item-link">Подробнее</a>
+                        <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                            class="default-btn">
+                            Заказать
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__title">
+                    О компании
+                </div>
+                <div class="about__text">
+                    Компания специализируется на оказании услуг в сфере корпоративного права, налогового консалтинга,
+                    представительства в судах, ликвидации и банкротства предприятий. На сегодняшний день, коллектив
+                    компании объединяет
+                    высокопрофессиональных экспертов имеющих
+                </div>
+                <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+                    class="about__btn default-btn">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <div c lass="form__inner">
+                <form>
+                    <div class="form__content">
+                        <div class="form__title">
+                            <div class="form__title__head">
+                                Получить Консультацию
+                            </div>
+                            <div class="form__title__text">
+                                Комплексный подход к вашему вопросу,
+                                своевременная правовую помощь, представление интересов во всех судебных инстанциях.
+                            </div>
+                        </div>
+                        <div class="form__box">
+                            <div class="form__box__inner">
+                                <div class="form__box__left">
+                                    <label>
+                                        E-mail
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Контактный телефон
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        ФИО
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Тема вопроса
+                                        <select>
+                                            <option>---------</option>
+                                            <option>---------</option>
+                                            <option>---------</option>
+                                            <option>---------</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="form__box__right">
+                                    <label>
+                                        Сообщение
+                                        <textarea>
+
+                                        </textarea>
+                                    </label>
+                                    <button class="default-btn" type="submit">Получить консультацию</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--подключаем сначала гугл библиотеку jquery https://developers.google.com/speed/libraries#libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--затем подключаем наш фансибокс для кнопки   -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!--карусель https://kenwheeler.github.io/slick/-->
+    <script src="js/slick.min.js"></script>
+
+    <!-- скрпт стилизации формы ввода (селект стрелочка вниз) -->
+    <script src="js/jquery.formstyler.min.js"></script>
+
+    <!--подключим наш собственный js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+
