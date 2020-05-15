@@ -2,8 +2,9 @@
 
 <h3> Технологии:<br/>
 <ul>
-li
-HTML
-CSS
-JS, (jquery)
+<li>HTML</li>
+<li>CSS</li>
+<li>JS, (jquery)</li>
+</ul>
 </h3>
+<img src='./img/oie_oie_animation.gif'>
